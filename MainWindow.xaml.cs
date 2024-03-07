@@ -24,5 +24,10 @@ namespace SakkTabla
         {
             InitializeComponent();
         }
+
+        private void Slider_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
+        {
+            MessageBox.Show(sli1.Value);
+        }
     }
 }

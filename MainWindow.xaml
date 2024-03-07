@@ -6,7 +6,14 @@
         xmlns:local="clr-namespace:SakkTabla"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
-
+    <Grid HorizontalAlignment="Center">
+        <StackPanel>
+        <TextBlock>MxN</TextBlock>
+            <Slider x:Name="sli1" Width="100px" Minimum="1" Maximum="10"></Slider>
+            <TextBlock x:Name="txbvalue1">1</TextBlock>
+            <Slider x:Name="sli2" ValueChanged="Slider_ValueChanged" Width="100px" Maximum="10" Minimum="1"></Slider>
+            <TextBlock x:Name="txbvalue2">1</TextBlock>
+        </StackPanel>
+        
     </Grid>
 </Window>
