@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Dynamic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -27,7 +28,12 @@ namespace SakkTabla
 
         private void Slider_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
         {
-            MessageBox.Show(sli1.Value);
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Tabla tabla = new Tabla(Convert.ToInt32(sli1.Value), Convert.ToInt32(sli2.Value));
+            tabla.ShowDialog();
         }
     }
 }

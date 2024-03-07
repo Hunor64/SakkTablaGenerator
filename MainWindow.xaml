@@ -13,6 +13,7 @@
             <TextBlock x:Name="txbvalue1">1</TextBlock>
             <Slider x:Name="sli2" ValueChanged="Slider_ValueChanged" Width="100px" Maximum="10" Minimum="1"></Slider>
             <TextBlock x:Name="txbvalue2">1</TextBlock>
+            <Button Click="Button_Click">Generál</Button>
         </StackPanel>
         
     </Grid>
